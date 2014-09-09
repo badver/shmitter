@@ -12,10 +12,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc, require: false
 
-group :development do
+group :development, :test do
 	gem 'sqlite3'
 	gem 'spring'
   gem 'rspec-rails'
+  gem 'guard-rspec'
 end
 
 group :production do

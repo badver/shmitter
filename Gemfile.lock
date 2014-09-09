@@ -28,6 +28,10 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    autoprefixer-rails (3.0.1.20140826)
+      execjs
+    bootstrap-sass (3.2.0.2)
+      sass (~> 3.2)
     builder (3.2.2)
     capybara (2.4.1)
       mime-types (>= 1.16)
@@ -191,6 +195,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
+  bootstrap-sass (~> 3.2.0)
   capybara (>= 2.1.0)
   coffee-rails (~> 4.0.0)
   guard-rspec
@@ -200,7 +206,7 @@ DEPENDENCIES
   rails (= 4.1.5)
   rails_12factor (>= 0.0.2)
   rspec-rails
-  sass-rails (~> 4.0.3)
+  sass-rails (>= 3.2)
   sdoc (~> 0.4.0)
   selenium-webdriver (>= 2.35.1)
   spring

@@ -13,7 +13,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc, require: false
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'sass-rails', '>= 3.2'
 gem 'autoprefixer-rails'
-#gem 'sprockets', '~> 3.0'
+gem 'bcrypt'
 
 group :development, :test do
 	gem 'sqlite3'

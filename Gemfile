@@ -20,6 +20,7 @@ group :development, :test do
 	gem 'spring'
   gem 'rspec-rails'
   gem 'guard-rspec'
+  gem 'rspec-its'
 end
 
 group :production do

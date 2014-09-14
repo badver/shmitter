@@ -48,7 +48,7 @@ guard :rspec, cmd: 'bundle exec rspec' do
     (m[1][/_pages/] ? "spec/requests/#{m[1]}_spec.rb" :
         "spec/requests/#{m[1].singularize}_pages_spec.rb")
   end
-  watch(%r{^app/controllers/sessions_controller\.rb$}) do |m|
+  watch(%r{^app/controllers/sessions_controller\.rb$}) do |_|
     "spec/requests/authentication_pages_spec.rb"
   end
 end

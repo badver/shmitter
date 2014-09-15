@@ -1,0 +1,12 @@
+<li class="list-group-item">
+  <div class="col-md-11">
+    <%= gravatar_for user, size: 52 %>
+    <%= link_to user.name, user %>
+  </div>
+  <% if current_user.admin? && !current_user?(user) %>
+      <div class="col-md-1">
+        <%= link_to 'delete', user, class: "btn btn-danger btn-xs", method: :delete,
+                    data: {confirm: 'You sure?'} %>
+      </div>
+  <% end %>
+</li>

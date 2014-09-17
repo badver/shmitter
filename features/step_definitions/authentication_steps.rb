@@ -34,6 +34,6 @@ And(/^they should see a signout link$/) do
   expect(page).to have_link('Sign out', href: signout_path)
 end
 
-And(/^something important (\d+)$/) do |count|
+And(/^something important (\d+)$/) do |_|
   pending
 end
